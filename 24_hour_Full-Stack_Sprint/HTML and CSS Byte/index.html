@@ -28,38 +28,86 @@
     width:100%;
   }
   
- .tile {
+ .tile{
     background-color: #999999;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     padding: 10px 5px;
-    height: 200px;
-    width: 50%;
+    height: 100px;
+    width: 20%;
+ 
+text-align:center;
+    overflow:auto;
   }
   
-  #o{
+  #topics{
      font-family:'Courier New';
   }
 
   .container{
 
-      padding:100px;
-
       margin-bottom:10px;
 
       display:flex;
+
+      flex-wrap:wrap;
 
       /*flex-wrap:wrap;
       align-items: flex-start;*/
   }
 
+#title{
+
+   width:100%;
+
+height:60%;
+
+background-color: black;
+
+color:white;
+
+text-align:center;
+
+}
+
+.img{
+
+width:100%;
+
+height:30vh;
+
+}
+
+a:hover{
+
+    color:red;
+}
+.footer{
+
+position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #efefef;
+  text-align: center;
+
+
+
+}
 </style>
 
 </head>
 
 <body>
 <title>Getting Started with HTML</title>
+    <div id="title">
     <h1>Learning HTML by doing!</h1> 
-    <div id="o">Topics learnt: HTML, CSS</div>
+    <div id="topics">Topics learnt: HTML, CSS</div>
+    </div>
+    <div class="img">
+
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"/>
+
+    </div>
     <div class="container">
         <h3>HTML</h3> 
 
@@ -70,6 +118,7 @@
     <div class="tile">Class attribute groups HTML elements</div>
 
 <div class="tile">Id attribute can be used to uniquely identify an element</div>
+<a href="https://www.crio.do">More</a>
 </div>
 
 <div class="container">
@@ -84,10 +133,11 @@
 
 <div class="tile">Different metrics like px, %, pt can be used to specify length</div>
 
+<a href="https://www.crio.do"> More </a>
 </div>
 
 
-    <p> <b> Created by: Afridi Majeed </b> </p>
+    <p id="footer"> <b> Created by: Afridi Majeed </b> </p>
 </body>
 
 </html>
