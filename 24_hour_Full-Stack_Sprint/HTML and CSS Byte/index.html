@@ -25,11 +25,12 @@
   
   h3 {
     color: white;
+    width:100%;
   }
   
  .tile {
     background-color: #999999;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 5px 5px 5px;
     padding: 10px 5px;
     height: 200px;
     width: 50%;
@@ -39,11 +40,16 @@
      font-family:'Courier New';
   }
 
-  #container{
+  .container{
 
       padding:100px;
 
       margin-bottom:10px;
+
+      display:flex;
+
+      /*flex-wrap:wrap;
+      align-items: flex-start;*/
   }
 
 </style>
@@ -61,6 +67,9 @@
     <div class="tile">"title" tag is displayed on the browser's title bar</div>
     <div class="tile">"div" tag divides content across sections</div>
     <div class="tile"> "b" tag makes text bold</div>
+    <div class="tile">Class attribute groups HTML elements</div>
+
+<div class="tile">Id attribute can be used to uniquely identify an element</div>
 </div>
 
 <div class="container">
