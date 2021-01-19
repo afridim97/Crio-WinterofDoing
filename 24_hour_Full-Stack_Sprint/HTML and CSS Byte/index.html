@@ -8,11 +8,11 @@
     padding: 0px;
   }
   
-  /* CSS selector to set style for the <body> element */
+  
   body {
-    /* Set the font of text displayed */
+    
     font-family: Verdana;
-    /* Set the background color */
+    
     background-color: lightgrey;
   }
   
@@ -27,14 +27,24 @@
     color: white;
   }
   
-  div {
+ .tile {
     background-color: #999999;
     margin: 5px 0px 5px 0px;
     padding: 10px 5px;
     height: 200px;
-    width: 20%;
+    width: 50%;
   }
   
+  #o{
+     font-family:'Courier New';
+  }
+
+  #container{
+
+      padding:100px;
+
+      margin-bottom:10px;
+  }
 
 </style>
 
@@ -43,13 +53,30 @@
 <body>
 <title>Getting Started with HTML</title>
     <h1>Learning HTML by doing!</h1> 
+    <div id="o">Topics learnt: HTML, CSS</div>
+    <div class="container">
+        <h3>HTML</h3> 
 
-    <h3>HTML</h3> 
+    <div class="tile">All HTML tags go inside the HTML element</div>
+    <div class="tile">"title" tag is displayed on the browser's title bar</div>
+    <div class="tile">"div" tag divides content across sections</div>
+    <div class="tile"> "b" tag makes text bold</div>
+</div>
 
-    <div>All HTML tags go inside the HTML element</div>
-    <div>"title" tag is displayed on the browser's title bar</div>
-    <div>"div" tag divides content across sections</div>
-    <div> "b" tag makes text bold</div>
+<div class="container">
+    <h3>CSS</h3>
+
+
+<div class="tile">CSS adds style to the HTML document</div>
+
+<div class="tile">"link" tag can be used to set the CSS file to be used</div>
+
+<div class="tile">Child elements inherit styles from its parent</div>
+
+<div class="tile">Different metrics like px, %, pt can be used to specify length</div>
+
+</div>
+
 
     <p> <b> Created by: Afridi Majeed </b> </p>
 </body>
